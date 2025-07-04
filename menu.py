@@ -14,6 +14,9 @@ running = False
 
 def display_menu(config, running):
     os.system("cls" if os.name == "nt" else "clear")
+    console.print("\n" + "="*40, style="bold cyan")
+    console.print("          CryonixSoft", style="bold cyan")
+    console.print("="*40, style="bold cyan")
     console.print(f"[bold cyan]{t('menu.title', locale=config['language'])}[/bold cyan]")
     console.print(t("menu.start_parse", locale=config['language']))
     console.print(t("menu.change_language", locale=config['language']))
